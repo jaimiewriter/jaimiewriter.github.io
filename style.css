@@ -1,0 +1,169 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+    *, *:before, *:after {
+    box-sizing: inherit;
+    margin:0;
+}
+
+/* styling for the whole body */
+body{
+    font-family: 'Nunito', sans-serif;
+    margin:0;
+    background-color: #fff;
+    width:100%;
+}
+
+.logo{
+    text-align: center;
+}
+
+.logo img{
+    padding-top:0.3em;
+    height: 7em;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.menu{
+    justify-content: center;
+    border-top: 1px solid rgb(201, 201, 201);
+    border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+.menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    /* display: inline; */
+}
+
+.menu a:focus{
+    background-color: #e9e9e9;
+}
+
+.menu a:hover {
+    background-color: #e9e9e9;
+    text-decoration: none;
+}
+
+/*  intro section */
+
+.intro-section{
+    height:550px;
+    background-image: url(./banner-1.jpg); 
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #464646;
+}
+
+.bg-image{
+    height:100%;
+    background:rgba(53, 53, 53, 0.7);
+    text-align: center;
+    padding: 11em 2em 0 2em;
+}
+
+.bg-image h4{
+    color:#11a0ff;
+}
+
+.bg-image h1{
+    font-size: 3em;
+    color:#ffffff;
+}
+
+.bg-image p{
+    color:#fafafa;
+}
+
+/* about me */
+
+.about-me{
+    padding: 7em 2em;
+}
+
+.about-me h1{
+    text-align: center;
+    font-size: 2.5em;
+    color: #464646;
+}
+
+.about-me p{
+    text-align: center;
+    padding:2em;
+    width:80%;
+    margin: 0 auto;
+    line-height: 1.5em;
+}
+
+/* services */
+
+.services{ 
+    background: #5f2c82;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #49a09d, #5f2c82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.services-content{
+    width:90%;
+    margin: 0 auto;
+    color:#fff;
+    padding:7em 2em;
+    text-align: center;
+}
+
+.services-content h1{
+    padding: 1em 0 0.2em 0;
+}
+
+.services-content p{
+    line-height: 1.5em;
+}
+
+/* Pricing */
+
+.prices{
+    padding: 7em 3em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.prices-content h1{
+    font-size: 2.2em;
+}
+
+.prices-content h2{
+    padding: 1em 0 0.2em 0;
+    color: rgb(6, 109, 141);
+    font-size: 2.2em;
+}
+
+.type-services p{
+    /* padding: 1em 0 0.2em 0; */
+    font-size: 1.4em;
+}
+
+.type-services{
+    margin-top: 2em;
+    width:50%;
+    padding: 1em 2em;
+    border-left: 1px solid rgb(199, 199, 199);
+}
+
+.price{
+    color: rgb(252, 34, 34);
+}
+
+div.rights{
+    background: rgb(66, 66, 66);
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
